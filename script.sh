@@ -13,7 +13,7 @@ repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-
 repo sync
 source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
-lunch
+lunch aosp_arm64-eng
 #lunch arrow_aosp_arm64-userdebug
 #make
-#m bacon
+m bacon
