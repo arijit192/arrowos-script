@@ -10,3 +10,6 @@ mkdir ~/an
 cd ~/an
 repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0
 repo sync
+. build/envsetup.sh
+lunch arrow_aosp_arm64-userdebug
+m bacon
