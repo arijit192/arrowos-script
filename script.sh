@@ -15,5 +15,5 @@ source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
 lunch arrow_lavender-userdebug
-#make
-m bacon
+make vendorimage
+#m bacon
