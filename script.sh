@@ -12,10 +12,9 @@ repo init --depth=1 -u git://codeaurora.org/platform/manifest.git -b release -m 
 #repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0
 repo sync
 source build/envsetup.sh
-ls device/qcom/msm8953_64
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
 #lunch arrow_lavender-userdebug
-#lunch
-#mka vendorimage
+lunch msm8953_64-userdebug
+make -j6 vendorimage
 #m bacon
