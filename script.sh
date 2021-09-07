@@ -25,7 +25,7 @@ git clone https://github.com/arijit192/device_samsung_m11q_vendor.git device/sam
 source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
-lunch arrow_lavender-userdebug
+lunch arrow_m11q-userdebug
 #lunch msm8953_64-userdebug
 #make -j6 vendorimage
 make systemimage
