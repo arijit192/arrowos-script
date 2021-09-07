@@ -21,7 +21,7 @@ repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-
 #make O=out msm8953-perf_defconfig
 #make O=out
 repo sync
-git clone https://github.com/arijit192/device_samsung_m11q_vendor.git device/samsung/m11q
+curl https://raw.githubusercontent.com/arijit192/arrowos-script/main/roomservice.xml > .repo/local_manifests/roomservice.xml
 source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
