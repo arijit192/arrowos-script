@@ -10,8 +10,9 @@ mkdir ~/an
 cd ~/an
 #repo init --depth=1 -u git://codeaurora.org/platform/manifest.git -b release -m LA.UM.9.6.2.r1-04800-89xx.0.xml
 #repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0
-repo init --depth=1 -u git://codeaurora.org/kernel/msm-4.9.git -b release -m LA.UM.9.6.2.r1-04800-89xx.0.xml
-repo sync
+git clone https://source.codeaurora.org/quic/la/kernel/msm-4.9 -b LA.UM.9.6.2.r1-04800-89xx.0
+cd msm-4.9
+#repo sync
 #source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
