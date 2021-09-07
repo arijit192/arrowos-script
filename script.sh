@@ -11,7 +11,15 @@ cd ~/an
 #repo init --depth=1 -u git://codeaurora.org/platform/manifest.git -b release -m LA.UM.9.6.2.r1-04800-89xx.0.xml
 #repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0
 git clone https://source.codeaurora.org/quic/la/kernel/msm-4.9 -b LA.UM.9.6.2.r1-04800-89xx.0
+https://source.codeaurora.org/quic/la/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b LA.UM.9.6.2.r1-04800-89xx.0
+export CROSS_COMPILE=$(pwd)/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export ARCH=arm64 && export SUBARCH=arm64
 cd msm-4.9
+mkdir -p out
+make O=out clean
+make O=out mrproper
+make O=out msm8953-perf_defconfig
+make O=out
 #repo sync
 #source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
@@ -19,5 +27,5 @@ cd msm-4.9
 #lunch arrow_lavender-userdebug
 #lunch msm8953_64-userdebug
 #make -j6 vendorimage
-make
+#make
 #m bacon
