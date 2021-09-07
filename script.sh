@@ -21,6 +21,7 @@ repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-
 #make O=out msm8953-perf_defconfig
 #make O=out
 repo sync
+mkdir -p .repo/local_manifests
 curl https://raw.githubusercontent.com/arijit192/arrowos-script/main/roomservice.xml > .repo/local_manifests/roomservice.xml
 source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
