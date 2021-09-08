@@ -24,7 +24,8 @@ curl https://raw.githubusercontent.com/arijit192/arrowos-script/main/roomservice
 #make O=out
 repo sync
 source build/envsetup.sh
-#export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
+#export ALLOW_MISSING_DEPENDENCIES=true && 
+export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
 lunch arrow_m11q-userdebug
 #lunch msm8953_64-userdebug
