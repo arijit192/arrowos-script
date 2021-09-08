@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Please do not manually edit this file-->
 <manifest>
-  <project name="arijit192/andorid_device_samsung_m11q" path="device/samsung/m11q" remote="github" revision="main"/>
+  <remote  name="githubA"
+           fetch="https://github.com/arijit192"
+           revision="main"
+           review="" />
+  
+  <project name="andorid_device_samsung_m11q" path="device/samsung/m11q" remote="githubA" />
 </manifest>
