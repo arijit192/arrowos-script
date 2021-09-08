@@ -3,7 +3,9 @@
 <manifest>
   <remote  name="githubA"
            fetch="https://github.com/arijit192"
-           review="" />
+           review=""
+           revision="refs/heads/arrow-11.0"
+          />
   
   <project name="andorid_device_samsung_m11q" path="device/samsung/m11q" remote="githubA" />
 </manifest>
