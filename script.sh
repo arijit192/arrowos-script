@@ -10,6 +10,8 @@ mkdir ~/an
 cd ~/an
 #repo init --depth=1 -u git://codeaurora.org/platform/manifest.git -b release -m LA.UM.9.6.2.r1-04800-89xx.0.xml
 repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-11.0
+mkdir -p .repo/local_manifests
+curl https://raw.githubusercontent.com/arijit192/arrowos-script/main/roomservice.xml > .repo/local_manifests/roomservice.xml
 #git clone https://source.codeaurora.org/quic/la/kernel/msm-4.9 -b LA.UM.9.6.2.r1-04800-89xx.0
 #git clone https://source.codeaurora.org/quic/la/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b LA.UM.9.6.2.r1-04800-89xx.0
 #export CROSS_COMPILE=$(pwd)/aarch64-linux-android-4.9/bin/aarch64-linux-android-
@@ -21,8 +23,6 @@ repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-
 #make O=out msm8953-perf_defconfig
 #make O=out
 repo sync
-mkdir -p .repo/local_manifests
-curl https://raw.githubusercontent.com/arijit192/arrowos-script/main/roomservice.xml > .repo/local_manifests/roomservice.xml
 source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
