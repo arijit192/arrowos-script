@@ -3,7 +3,6 @@
 <manifest>
   <remote  name="githubA"
            fetch="https://github.com/arijit192"
-           revision="main"
            review="" />
   
   <project name="andorid_device_samsung_m11q" path="device/samsung/m11q" remote="githubA" />
