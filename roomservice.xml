@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--Please do not manually edit this file-->
 <manifest>
-  <project name="arijit192/android_device_samsung_m11q" path="device/samsung/m11q" remote="github" />
+  <project name="arijit192/andorid_device_samsung_m11q" path="device/samsung/m11q" remote="github" />
 </manifest>
