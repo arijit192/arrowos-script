@@ -23,7 +23,7 @@ repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-
 #make O=out msm8953-perf_defconfig
 #make O=out
 repo sync
-git clone https://github.com/arijit192/android_device_samsung_m11q device/samsung/m11q -b arrow-11.0
+git clone https://github.com/arijit192/android_device_samsung_m11q-WIP device/samsung/m11q -b arrow-11.0
 source build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && 
 export LC_ALL="C"
