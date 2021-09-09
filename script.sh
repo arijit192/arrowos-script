@@ -2,6 +2,12 @@
 
 git config --global user.email "tukaiari@gmail.com"
 git config --global user.name "Arijit Roy"
+export CCACHE_DIR = ~/ccache
+export CCACHE_EXEC = $(which ccache)
+export USE_CCACHE=1
+ccache -M 25G
+ccache -o compression=true
+ccache -z
 mkdir ~/bin
 PATH=~/bin:$PATH
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
@@ -31,6 +37,5 @@ export LC_ALL="C"
 lunch arrow_m11q-userdebug
 #lunch msm8953_64-userdebug
 #make -j6 vendorimage
-cd hardware && mma
-#make systemimage
+timeout 75m make systemimage
 #m bacon
