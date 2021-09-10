@@ -2,7 +2,6 @@
 
 git config --global user.email "tukaiari@gmail.com"
 git config --global user.name "Arijit Roy"
-tmate
 export CCACHE_DIR=~/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
