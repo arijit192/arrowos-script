@@ -7,7 +7,6 @@ export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
 ccache -M 25G
 ccache -o compression=true
-ccache -z
 mkdir ~/bin
 PATH=~/bin:$PATH
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
