@@ -36,5 +36,5 @@ export LC_ALL="C"
 lunch arrow_m11q-userdebug
 #lunch msm8953_64-userdebug
 #make -j6 vendorimage
-m systemimage
+timeout -k 10 90m m systemimage
 #m bacon
