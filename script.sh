@@ -29,12 +29,12 @@ repo init --depth=1 -u https://github.com/ArrowOS/android_manifest.git -b arrow-
 #make O=out
 repo sync
 git clone https://github.com/arijit192/android_device_samsung_m11q-WIP device/samsung/m11q -b arrow-11.0
-source build/envsetup.sh
+. build/envsetup.sh
 #export ALLOW_MISSING_DEPENDENCIES=true && 
 export LC_ALL="C"
 #choosecombo 1 aosp_arm64 eng
 lunch arrow_m11q-userdebug
 #lunch msm8953_64-userdebug
 #make -j6 vendorimage
-timeout -k 10 90m $(m systemimage)
+timeout -k 10 90m m bacon
 #m bacon
